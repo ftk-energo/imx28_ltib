@@ -1,0 +1,7 @@
+cp rootfs.tar.bz2 images/
+cp rootfs.ubifs.img images/
+cp rootfs/boot/imx28_ivt_uboot.sb images/
+cp rootfs/boot/imx28_ivt_linux.sb images/
+cp rootfs/boot/uImage images/
+cp rpm/BUILD/linux/.config images/kernel_config
+cp config/platform/imx/defconfig.dev images/

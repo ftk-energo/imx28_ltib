@@ -1,0 +1,3 @@
+echo ./ltib -p boot_stream.spec -m prep
+./ltib -p boot_stream.spec -m scbuild
+./ltib -p boot_stream.spec -m scdeploy

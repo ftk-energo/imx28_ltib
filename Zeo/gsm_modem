@@ -1,0 +1,29 @@
+echo 'Using connect | disconnect | power_on | power_off'
+
+if [ $1 == 'connect' ]; then
+echo Connecting...
+echo at+creg=1 > /dev/ttyUSB3
+pppd debug call $2
+fi
+
+if [ $1 == 'disconnect' ]; then
+echo Disconnecting...
+killall pppd
+fi
+
+if [ $1 == 'power_on' ]; then
+echo Power On...
+echo 39 > /sys/class/gpio/export
+echo 40 > /sys/class/gpio/export
+echo out > /sys/class/gpio/gpio39/direction
+echo out > /sys/class/gpio/gpio40/direction
+echo 1 > /sys/class/gpio/gpio40/value
+sleep 1
+echo 1 > /sys/class/gpio/gpio39/value
+fi
+
+if [ $1 == 'power_off' ]; then
+echo Power Off...
+echo 0 > /sys/class/gpio/gpio40/value
+fi
+

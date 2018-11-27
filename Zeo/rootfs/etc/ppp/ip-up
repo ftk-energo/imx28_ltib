@@ -1,0 +1,7 @@
+#!/bin/sh
+cd /etc
+rm resolv.conf
+ln -s /etc/ppp/resolv.conf
+route del default
+route add default dev ppp0
+

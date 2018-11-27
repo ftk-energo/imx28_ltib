@@ -1,0 +1,9 @@
+# Kernel config depends on Board type (see main.lk)
+# this file is useless now
+#
+# Switch board type in ltib
+echo Using set_config tionpro28|orion28
+rm ./rpm/BUILD/linux-2.6.35.3/drivers/serial/mxs-auart.o
+echo Copying imx28%1_defconfig.dev to imx28evk_defconfig.dev
+echo cp ./config/platform/imx/imx28evk_defconfig.dev imx28evk_defconfig_prev.dev
+echo cp ./config/platform/imx/imx28%1_defconfig.dev ./config/platform/imx/imx28evk_defconfig.dev

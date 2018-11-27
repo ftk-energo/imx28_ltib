@@ -1,0 +1,3 @@
+rem mkfs.ubifs -m 2048 -e 126976 -c 1600 -o rootfs.ubifs -r rootfs.tmp
+ubinize -o rootfs.ubi.img -p 128KiB -m 2048 ubi.cfg
+

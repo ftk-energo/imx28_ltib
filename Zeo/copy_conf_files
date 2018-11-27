@@ -1,0 +1,21 @@
+chmod 777 *.*
+cp -p rcS /home/ubuntu/Projects/TionPro28/ltib/ltib/rootfs.tmp/etc/rc.d/
+cp -p rc.conf /home/ubuntu/Projects/TionPro28/ltib/ltib/rootfs.tmp/etc/rc.d/
+cp -p rc.serial /home/ubuntu/Projects/TionPro28/ltib/ltib/rootfs.tmp/etc/rc.d/
+cp -p inetd.conf /home/ubuntu/Projects/TionPro28/ltib/ltib/rootfs.tmp/etc/
+sudo cp -p rcS /home/ubuntu/Projects/TionPro28/ltib/ltib/rootfs/etc/rc.d/
+sudo cp -p rc.conf /home/ubuntu/Projects/TionPro28/ltib/ltib/rootfs/etc/rc.d/
+sudo cp -p rc.serial /home/ubuntu/Projects/TionPro28/ltib/ltib/rootfs/etc/rc.d/
+sudo cp -p inetd.conf /home/ubuntu/Projects/TionPro28/ltib/ltib/rootfs/etc/
+cp -p set_uart_mode /home/ubuntu/Projects/TionPro28/ltib/ltib/rootfs.tmp/usr/bin/
+cp -p uart_test /home/ubuntu/Projects/TionPro28/ltib/ltib/rootfs.tmp/usr/bin/
+cp -p tion_config /home/ubuntu/Projects/TionPro28/ltib/ltib/rootfs.tmp/usr/bin/
+cp -p set_mac_imx /home/ubuntu/Projects/TionPro28/ltib/ltib/rootfs.tmp/usr/bin/
+sudo cp -p set_uart_mode /home/ubuntu/Projects/TionPro28/ltib/ltib/rootfs/usr/bin/
+sudo cp -p uart_test /home/ubuntu/Projects/TionPro28/ltib/ltib/rootfs/usr/bin/
+sudo cp -p tion_config /home/ubuntu/Projects/TionPro28/ltib/ltib/rootfs/usr/bin/
+sudo cp -p set_mac_imx /home/ubuntu/Projects/TionPro28/ltib/ltib/rootfs/usr/bin/
+cp -r ./socat/* /home/ubuntu/Projects/TionPro28/ltib/ltib/rootfs.tmp/
+sudo cp -r ./socat/* /home/ubuntu/Projects/TionPro28/ltib/ltib/rootfs/
+
+

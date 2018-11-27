@@ -1,0 +1,1 @@
+tar -C rootfs.tmp --owner=root --group=root --exclude-from=exclude -cf rootfs.tar .

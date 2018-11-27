@@ -1,0 +1,15 @@
+#!/bin/bash
+
+MAC="$(cat /sys/fsl_otp/HW_OCOTP_CUST0)"
+if [ $MAC != 0x0 ] ;
+then echo; echo "ERROR!!! MAC already set"; echo $MAC; cat /sys/fsl_otp/HW_OCOTP_CUST1; echo; exit 1; 
+fi
+read -p $1... MAC2
+read -p "Write $1.$MAC2 (y/n)?" ANS
+if [ $ANS != "y" ] ;
+then echo; echo "Abort..."; echo; exit 1;
+fi
+echo $1 > /sys/fsl_otp/HW_OCOTP_CUST0
+echo 0x00$MAC2 > /sys/fsl_otp/HW_OCOTP_CUST1
+echo "New MAC - $1$MAC2"
+

@@ -1,0 +1,24 @@
+#!/bin/sh
+
+# Uart settings
+stty -F /dev/ttySP0 115200 cs8 -cstopb -parenb
+stty -F /dev/ttySP1 115200 cs8 -cstopb -parenb
+stty -F /dev/ttySP2 115200 cs8 -cstopb -parenb
+stty -F /dev/ttySP3 115200 cs8 -cstopb -parenb
+
+
+# Set UART mode for Port
+# /dev/ttySP1 - Port1
+# /dev/ttySP2 - Port2
+# Mode: 1-RS232, 2-RS485
+# Ignore for Orion28
+if ! grep -q orion28 /proc/version
+then
+if [ $1 = "start" ]
+then
+set_uart_mode /dev/ttySP1 1
+set_uart_mode /dev/ttySP2 2
+fi
+fi
+
+exit 0

@@ -1,0 +1,8 @@
+/etc/rc.d/rc.serial
+/etc/rc.d/rcS
+set_uart_mode
+uart_test
+socat
+/usr/bin/set_mac_imx
+
+

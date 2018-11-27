@@ -1,0 +1,4 @@
+OPERATOR="megafon"
+/opt/Danfoss/gprs_init
+pppd debug call $OPERATOR
+

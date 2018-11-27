@@ -1,0 +1,3 @@
+#cp -r ./ /home/ubuntu/Projects/TionPro28/ltib/ltib/rootfs
+rsync -a --exclude ".*~" ./ /home/ubuntu/Projects/TionPro28/ltib/ltib/rootfs
+

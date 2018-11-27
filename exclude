@@ -1,0 +1,12 @@
+*.c
+*.cpp
+*.pro
+*.obj
+*.moc
+*.pch
+*.qrc
+*.html
+*.mk
+*.bak
+*gtk-doc*
+usr/manual

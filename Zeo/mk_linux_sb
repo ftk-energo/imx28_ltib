@@ -1,0 +1,2 @@
+sed -i 's,[^ *]zImage.*;,\tzImage="/home/ubuntu/Projects/TionPro28/ltib/ltib/rootfs/boot/zImage";,' linux_ivt.bd
+./elftosb -z -f imx28 -c ./linux_ivt.bd -o imx28_ivt_linux.sb
