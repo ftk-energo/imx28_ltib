@@ -2,13 +2,13 @@
 
 Summary         : TTY mode communications package ala Telix
 Name            : minicom
-Version         : 2.2
+Version         : 2.6.1
 Release         : 1
 License         : GPL
 Vendor          : Freescale
 Packager        : Umesh Nerlige
 Group           : Applications/Communications
-URL             : http://ftp.debian.org/debian/pool/main/m/minicom/minicom_2.2.orig.tar.gz
+URL             : http://ftp.debian.org/debian/pool/main/m/minicom/minicom_2.6.1.orig.tar.gz
 Source          : %{name}_%{version}.orig.tar.gz
 BuildRoot       : %{_tmppath}/%{name}
 Prefix          : %{pfx}
