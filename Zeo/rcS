@@ -40,6 +40,6 @@ fi
 # run rc.serial if present and executable
 if [ -x /etc/rc.d/rc.serial ]
 then
-    /etc/rc.d/rc.serial
+    /etc/rc.d/rc.serial $mode
 fi
 
